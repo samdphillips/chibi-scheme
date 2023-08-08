@@ -2404,6 +2404,10 @@ sexp sexp_current_environment (sexp ctx, sexp self, sexp_sint_t n) {
   return sexp_context_env(ctx);
 }
 
+sexp sexp_secret_number (sexp ctx, sexp self, sexp_sint_t n) {
+  return sexp_make_fixnum(42);
+}
+
 #if SEXP_USE_MODULES
 sexp sexp_current_module_path_op (sexp ctx, sexp self, sexp_sint_t n, sexp x) {
   if (sexp_pairp(x) && sexp_stringp(sexp_car(x))) {

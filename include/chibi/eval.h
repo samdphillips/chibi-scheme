@@ -99,6 +99,7 @@ SEXP_API sexp sexp_current_module_path_op (sexp ctx, sexp self, sexp_sint_t n, s
 SEXP_API sexp sexp_find_module_file_op (sexp ctx, sexp self, sexp_sint_t n, sexp file);
 SEXP_API sexp sexp_load_module_file_op (sexp ctx, sexp self, sexp_sint_t n, sexp file, sexp env);
 SEXP_API sexp sexp_add_module_directory_op (sexp ctx, sexp self, sexp_sint_t n, sexp dir, sexp appendp);
+SEXP_API sexp sexp_secret_number (sexp ctx, sexp self, sexp_sint_t n);
 SEXP_API sexp sexp_current_environment (sexp ctx, sexp self, sexp_sint_t n);
 SEXP_API sexp sexp_set_current_environment (sexp ctx, sexp self, sexp_sint_t n, sexp env);
 SEXP_API sexp sexp_meta_environment (sexp ctx, sexp self, sexp_sint_t n);
